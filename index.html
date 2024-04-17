@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <style type="text/css">
+        body {
+              background-color: #3c1053;
+              margin: 0;
+              padding: 0;
+              font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 4rem;
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .gambar {
+            width: 300px;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gambar-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gambar:hover .gambar-img {
+            transform: scale(1.1);
+        }
+
+        .gambar .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gambar:hover .content {
+            opacity: 1;
+        }
+
+        .content h2, .content p {
+            margin: 0;
+            color: white;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Top 4 My Favorite Turkish Series</h1>
+    <div class="gallery">
+        <div class="gambar">
+            <a href="./public/series1.html">
+                <img class="gambar-img" src="./assets/images/photo1.jpg" alt="Muhtesem Yuzyil">
+                <div class="content">
+                    <h2>Muhtesem Yuzyil</h2>
+                    <p>This series is about the Ottoman Empire</p>
+                </div>
+            </a>
+        </div>
+        <div class="gambar">
+            <a href="./public/series2.html">
+                <img class="gambar-img" src="./assets/images/photo2.jpg" alt="Kara Sevda">
+                <div class="content">
+                    <h2>Kara Sevda</h2>
+                    <p>This series is about a love story</p>
+                </div>
+            </a>
+        </div>
+        <div class="gambar">
+            <a href="./public/series3.html">
+                <img class="gambar-img" src="./assets/images/photo3.jpg" alt="Kirgin Cicekler">
+                <div class="content">
+                    <h2>Kirgin Cicekler</h2>
+                    <p>This series is about friendship</p>
+                </div>
+            </a>
+        </div>
+        <div class="gambar">
+            <a href="./public/series4.html">
+                <img class="gambar-img" src="./assets/images/photo4.jpg" alt="Kurulus Osman">
+                <div class="content">
+                    <h2>Kurulus Osman</h2>
+                    <p>This series is about the founder of the Ottoman Empire</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
